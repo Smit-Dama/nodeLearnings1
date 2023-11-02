@@ -1,0 +1,81 @@
+* {
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sign_up_form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#f8f8fa;
+    padding: 2rem;
+    justify-content: center;
+
+    .sign_up {
+
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        border: 0.1rem solid rgb(60, 0, 128);
+        gap: 1rem;
+        border-radius: 1rem;
+
+        label {
+
+            display: flex;
+            font-size: 1.6rem;
+            color: rgb(32, 77, 67);
+            
+        }
+
+        .textbox {
+
+            display: flex;
+            width: 30rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            border: 0.1rem solid;
+            font-size: 1.4rem;
+            background-color:transparent;
+
+
+
+        }
+
+        .textbox::placeholder {
+
+            font-size: 1.2rem;
+            color: teal;
+        }
+
+        select {
+
+            @extend .textbox;
+
+            option {
+                @extend .textbox;
+                background-color: rgb(52, 123, 123);
+            }
+        }
+
+
+
+        .submit-btn {
+
+            display: flex;
+            padding: 1rem;
+            justify-content: center;
+            font-size: 1.6rem;
+            border-radius: 1rem;
+            border: 0.1rem solid;
+            background-color: rgb(52, 123, 123);
+            color: whitesmoke;
+            cursor: pointer;
+        }
+
+
+
+    }
+}
